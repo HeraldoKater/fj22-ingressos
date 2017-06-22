@@ -2,7 +2,7 @@
 	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <%@ taglib tagdir="/WEB-INF/tags/" prefix="ingresso"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
 
 <ingresso:template>
@@ -13,6 +13,7 @@
 				<tr>
 					<th>Nome</th>
 					<th>Duração</th>
+					<th>Preço</th>
 					<th colspan="2" class="text-center">Ações</th>
 				</tr>
 			</thead>
@@ -21,6 +22,8 @@
 					<tr>
 						<td>${filme.nome}</td>
 						<td>${filme.duracao.toMinutes()}</td>
+						<td>${filme.preco}</td>
+						
 						<td>
 							<a onclick="excluir(${filme.id})" class="btn btn-danger">Excluir</a>
 						</td>

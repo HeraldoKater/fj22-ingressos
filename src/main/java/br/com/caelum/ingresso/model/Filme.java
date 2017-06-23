@@ -44,10 +44,6 @@ public class Filme {
 		this.preco = preco;
 	}
 
-	public void setDuracao(Duration duracao) {
-		this.duracao = duracao;
-	}
-
 	public Integer getId() {
         return id;
     }
